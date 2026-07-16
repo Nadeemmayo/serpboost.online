@@ -1,1 +1,4 @@
-lkl
+User-agent: *
+Allow: /
+
+Sitemap: https://serpboost.online/sitemap.xml
