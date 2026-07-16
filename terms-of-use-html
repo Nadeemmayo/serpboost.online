@@ -1,1 +1,568 @@
-k
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://serpboost.online/terms-of-use.html">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2413/2413026.png" type="image/png">
+
+<title>Terms of Use | SerpBoost SEO Agency</title>
+<meta name="description" content="Read the SerpBoost Terms of Use for guest posting, link building, niche edits, authority backlinks and off-page SEO services.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'G-GB37RK3Z13');
+</script>
+
+<meta property="og:title" content="Terms of Use | SerpBoost SEO Agency">
+<meta property="og:description" content="Review SerpBoost service terms for SEO campaigns, guest posting, backlinks, niche edits and link building delivery.">
+<meta property="og:url" content="https://serpboost.online/terms-of-use.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://serpboost.online/preview.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#031c20;
+  color:#d7ece9;
+  font-family:'Manrope',Arial,Helvetica,sans-serif;
+  overflow-x:hidden;
+}
+
+h1,
+h2,
+h3,
+.logo-text{
+  font-family:'Space Grotesk',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+::selection{
+  background:#2deacb;
+  color:#02181b;
+}
+
+.hero-bg{
+  position:relative;
+  overflow:hidden;
+  background:
+  radial-gradient(circle at top left,rgba(45,234,203,.22),transparent 31%),
+  radial-gradient(circle at bottom right,rgba(255,61,129,.20),transparent 36%),
+  linear-gradient(135deg,#04262b 0%,#083a3f 48%,#031c20 100%);
+}
+
+.hero-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.20;
+  background-image:
+  linear-gradient(rgba(45,234,203,.12) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(45,234,203,.12) 1px,transparent 1px);
+  background-size:55px 55px;
+  pointer-events:none;
+}
+
+.mint-text{
+  color:#2deacb;
+}
+
+.magenta-text{
+  color:#ff3d81;
+}
+
+.silver-text{
+  color:#d7ece9;
+}
+
+.deep-text{
+  color:#02181b;
+}
+
+.muted-text{
+  color:#a9cfc9;
+}
+
+.logo-mark{
+  width:46px;
+  height:46px;
+  border-radius:9px;
+  background:linear-gradient(135deg,#2deacb,#ff3d81);
+  color:#02181b;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  margin-right:11px;
+  font-family:'Space Grotesk',sans-serif;
+  box-shadow:0 15px 38px rgba(45,234,203,.22);
+}
+
+.main-btn{
+  background:linear-gradient(135deg,#2deacb,#ff3d81);
+  color:#02181b;
+  font-weight:800;
+  border-radius:7px;
+  padding:14px 30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  transition:.3s;
+  box-shadow:0 16px 36px rgba(45,234,203,.24);
+}
+
+.main-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 50px rgba(255,61,129,.22);
+}
+
+.policy-card{
+  background:
+  linear-gradient(145deg,rgba(45,234,203,.07),rgba(255,61,129,.035));
+  border:1px solid rgba(45,234,203,.22);
+  box-shadow:0 30px 85px rgba(0,0,0,.35);
+  border-radius:20px;
+  backdrop-filter:blur(14px);
+}
+
+.policy-card h2{
+  font-size:26px;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#d7ece9;
+  margin-top:38px;
+  margin-bottom:13px;
+  letter-spacing:-.02em;
+}
+
+.policy-card p{
+  color:#a9cfc9;
+  font-size:17px;
+  line-height:1.9;
+  margin-bottom:16px;
+}
+
+.policy-card ul{
+  margin-left:22px;
+  margin-bottom:20px;
+  color:#a9cfc9;
+  line-height:1.9;
+  list-style:disc;
+}
+
+.policy-card li{
+  margin-bottom:8px;
+  padding-left:4px;
+}
+
+.notice-box{
+  background:
+  linear-gradient(135deg,rgba(45,234,203,.11),rgba(255,61,129,.09));
+  border-left:5px solid #ff3d81;
+  border-top:1px solid rgba(45,234,203,.18);
+  border-right:1px solid rgba(45,234,203,.18);
+  border-bottom:1px solid rgba(45,234,203,.18);
+  border-radius:0 16px 16px 0;
+  padding:22px;
+  margin:30px 0;
+  color:#d7ece9;
+  box-shadow:0 18px 45px rgba(0,0,0,.20);
+}
+
+.notice-box strong{
+  color:#2deacb;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+.mobile-menu.active{
+  display:block;
+}
+
+.nav-link{
+  color:#d7ece9;
+  transition:.3s;
+}
+
+.nav-link:hover{
+  color:#2deacb;
+}
+
+.footer-link{
+  transition:.3s;
+}
+
+.footer-link:hover{
+  color:#2deacb;
+}
+
+@media(max-width:768px){
+  .desktop-menu{
+    display:none!important;
+  }
+
+  .mobile-menu{
+    background:#04262b;
+    padding:18px 24px;
+    border-top:1px solid rgba(45,234,203,.20);
+  }
+
+  .mobile-menu a{
+    display:block;
+    padding:12px 0;
+    color:#d7ece9;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:13px;
+    border-bottom:1px solid rgba(45,234,203,.12);
+  }
+
+  .policy-card h2{
+    font-size:23px;
+  }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"SerpBoost Terms of Use",
+  "url":"https://serpboost.online/terms-of-use.html",
+  "description":"Terms of Use for SerpBoost guest posting, link building, niche edits and off-page SEO services.",
+  "publisher":{
+    "@type":"Organization",
+    "name":"SerpBoost",
+    "url":"https://serpboost.online/"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<nav
+  class="sticky top-0 z-50 backdrop-blur-xl border-b"
+  style="background:rgba(4,38,43,.93);border-color:rgba(45,234,203,.20);"
+>
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+    <a href="index.html" class="text-2xl font-semibold silver-text flex items-center logo-text">
+      <span class="logo-mark">S</span>
+      SERP<span class="mint-text">BOOST</span>
+    </a>
+
+    <div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center tracking-wide">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="all-niches-sites.html" class="nav-link">All Niches</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="FAQs.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="main-btn text-sm px-5 py-2">
+        Contact
+      </a>
+    </div>
+
+    <button
+      class="mobile-menu-btn text-3xl md:hidden silver-text"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="all-niches-sites.html">All Niches</a>
+    <a href="blog.html">Blog</a>
+    <a href="FAQs.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero-bg py-24 px-6 text-center">
+  <div class="max-w-5xl mx-auto relative z-10">
+
+    <span
+      class="inline-block text-xs font-bold uppercase tracking-[4px] px-5 py-2 rounded-full mb-6"
+      style="border:1px solid rgba(45,234,203,.36);background:rgba(45,234,203,.08);color:#2deacb;"
+    >
+      Legal Terms
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-semibold uppercase leading-tight mb-6 silver-text">
+      Terms of <span class="magenta-text">Use</span>
+    </h1>
+
+    <p class="text-[#a9cfc9] text-lg md:text-xl max-w-3xl mx-auto leading-8">
+      By using SerpBoost services, you agree to our service terms for guest posting, link building, niche edits, authority backlinks and off-page SEO campaigns.
+    </p>
+
+  </div>
+</section>
+
+<main class="py-20 px-6" style="background:#031c20;">
+  <div class="max-w-4xl mx-auto policy-card p-8 md:p-12">
+
+    <p class="text-sm font-bold uppercase tracking-[2px] magenta-text mb-6">
+      Last Updated: 2026
+    </p>
+
+    <p>
+      These Terms of Use explain the rules and conditions for using the SerpBoost website and services. By contacting us, placing an order or using our SEO services, you agree to the terms described on this page.
+    </p>
+
+    <div class="notice-box">
+      <strong>Important Note:</strong>
+      Please provide accurate website details, target URLs, anchor text, niche, country and campaign requirements before work starts.
+    </div>
+
+    <h2>Service Agreement</h2>
+
+    <p>
+      SerpBoost provides guest posting, link building, niche edits, authority backlinks, content writing, SEO audits and off-page SEO services. Service scope, pricing, delivery time and website metrics are agreed before order confirmation.
+    </p>
+
+    <h2>Client Responsibilities</h2>
+
+    <p>
+      Clients are responsible for providing accurate and complete information required for SEO and link building tasks. This may include the website URL, target page, anchor text, preferred niche, target country, keywords and content requirements.
+    </p>
+
+    <ul>
+      <li>Provide correct website and contact information.</li>
+      <li>Confirm target URLs and anchor text before order processing.</li>
+      <li>Share content guidelines, niche restrictions or special requirements in advance.</li>
+      <li>Review and approve website options before placement where applicable.</li>
+    </ul>
+
+    <h2>Service Delivery</h2>
+
+    <p>
+      Live links for guest posts, niche edits or backlink placements are delivered according to the agreed website metrics, niche, pricing and publisher availability at the time of purchase.
+    </p>
+
+    <p>
+      Delivery time may vary depending on publisher response, content approval, website queue, editorial review and order complexity.
+    </p>
+
+    <h2>Website Metrics</h2>
+
+    <p>
+      Metrics such as DA, DR, organic traffic, spam score or indexing status are checked before placement where applicable. However, third-party metrics can change over time because they are controlled by external tools, publishers and search engines.
+    </p>
+
+    <h2>Content Approval</h2>
+
+    <p>
+      For guest posting orders, content may be provided by the client or prepared by SerpBoost. All content must follow publisher guidelines. Publishers may edit, reject or request changes based on their editorial policy.
+    </p>
+
+    <h2>Backlink Placement</h2>
+
+    <p>
+      Backlinks are placed according to the agreed terms. Link type, anchor text, target URL and placement details should be confirmed before work begins. Once a link is live and approved, further changes may depend on publisher availability and policy.
+    </p>
+
+    <h2>No Ranking Guarantee</h2>
+
+    <p>
+      SerpBoost provides SEO services designed to improve authority, visibility and backlink profile strength. However, we do not guarantee exact ranking positions, traffic increases or fixed search engine results because SEO performance depends on many external factors.
+    </p>
+
+    <h2>Prohibited Use</h2>
+
+    <p>
+      Clients may not use our services for illegal, harmful, misleading, fraudulent or spam-based activities. SerpBoost may refuse work related to websites or content that violates publisher rules, legal requirements or ethical SEO practices.
+    </p>
+
+    <h2>Payments</h2>
+
+    <p>
+      Payment terms are agreed before order processing. Some services may require advance payment depending on publisher cost, campaign size, order volume or custom requirements.
+    </p>
+
+    <h2>Changes and Revisions</h2>
+
+    <p>
+      Changes requested after work has started may require additional time or cost. Publisher-side edits, content changes, anchor changes or target URL changes are subject to publisher approval and may not always be possible.
+    </p>
+
+    <h2>Refunds and Replacements</h2>
+
+    <p>
+      Refunds and replacements are handled according to our Refund Policy. If an approved placement cannot be delivered, SerpBoost may offer a suitable replacement, service credit or another solution based on the circumstances.
+    </p>
+
+    <h2>Third-Party Publishers</h2>
+
+    <p>
+      Guest posts, backlinks and niche edits may be published on third-party websites. SerpBoost does not own or control these external publishers and cannot guarantee that their design, content, policies, metrics or business operations will remain unchanged after delivery.
+    </p>
+
+    <h2>Link Duration</h2>
+
+    <p>
+      Placements are intended to remain live according to the publisher's stated terms. However, publishers may remove, edit, redirect or update content in the future. Any replacement eligibility will be handled according to the applicable service agreement and Refund Policy.
+    </p>
+
+    <h2>SEO Result Disclaimer</h2>
+
+    <p>
+      Search engine rankings and traffic can change because of algorithm updates, competitors, technical website issues, content quality, market conditions and other factors outside our control. SerpBoost does not promise guaranteed rankings or specific traffic figures.
+    </p>
+
+    <h2>Limitation of Liability</h2>
+
+    <p>
+      SerpBoost is not responsible for third-party website changes, search engine algorithm updates, publisher policy changes, ranking fluctuations, indexing delays or changes in third-party SEO metrics after service delivery.
+    </p>
+
+    <h2>Intellectual Property</h2>
+
+    <p>
+      Website design, branding, written content and original materials published on SerpBoost are protected and may not be copied, republished or used commercially without prior written permission.
+    </p>
+
+    <h2>Communication</h2>
+
+    <p>
+      Clients should use accurate and active contact details. Important project information, placement options, approvals, reports and service updates may be communicated through email, WhatsApp, Telegram or another agreed communication platform.
+    </p>
+
+    <h2>Policy Updates</h2>
+
+    <p>
+      SerpBoost may update these Terms of Use from time to time. Updated terms will be posted on this page with the latest revision date.
+    </p>
+
+    <h2>Contact Us</h2>
+
+    <p>
+      For questions about these Terms of Use or our SEO services, please contact us through the official SerpBoost contact page.
+    </p>
+
+    <div class="mt-10 flex gap-4 flex-wrap">
+
+      <a href="index.html" class="main-btn">
+        <i class="fas fa-arrow-left"></i>
+        Back To Home
+      </a>
+
+      <a href="contact.html" class="main-btn">
+        <i class="fas fa-envelope"></i>
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+</main>
+
+<footer
+  class="pt-12 pb-8 px-6 text-center"
+  style="background:#02181b;border-top:1px solid rgba(45,234,203,.24);"
+>
+  <div class="max-w-6xl mx-auto">
+
+    <p class="text-2xl font-semibold silver-text logo-text">
+      SERP<span class="mint-text">BOOST</span>
+    </p>
+
+    <p class="text-[#a9cfc9] text-sm mt-3">
+      Guest Posting • Link Building • Niche Edits • Authority Backlinks
+    </p>
+
+    <div class="flex justify-center gap-5 flex-wrap mt-6 text-sm font-bold">
+      <a href="privacy-policy.html" class="footer-link text-[#a9cfc9]">
+        Privacy Policy
+      </a>
+
+      <a href="terms-of-use.html" class="magenta-text">
+        Terms of Use
+      </a>
+
+      <a href="refund-policy.html" class="footer-link text-[#a9cfc9]">
+        Refund Policy
+      </a>
+
+      <a href="contact.html" class="footer-link text-[#a9cfc9]">
+        Contact
+      </a>
+    </div>
+
+    <p class="text-[#6fa69f] text-sm mt-7">
+      © 2026 SerpBoost SEO Agency. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+if(menuBtn && mobileMenu){
+  menuBtn.addEventListener('click', function(){
+    const isOpen = mobileMenu.classList.toggle('active');
+
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+
+    menuBtn.innerHTML = isOpen
+      ? '<i class="fas fa-xmark"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      mobileMenu.classList.remove('active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+}
+</script>
+
+</body>
+</html>
