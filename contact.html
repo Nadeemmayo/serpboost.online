@@ -548,37 +548,37 @@ textarea.input-field{
           Share your website details and required service. Our team will review your project and recommend a suitable SEO or backlink strategy.
         </p>
 
-        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+        <form action="https://formsubmit.co/nadeemonlin@gmail.com" method="POST" class="space-y-5">
 
-          <input type="hidden" name="access_key" value="1b985ea1-ae11-4902-8f9f-0d76eecee5f1">
+          <input type="hidden" name="_captcha" value="false">
 
-          <input type="hidden" name="subject" value="New Contact Form Submission - SERPBoost">
+          <input type="hidden" name="_subject" value="New Contact Form Submission - SERPBoost">
 
-          <input type="hidden" name="from_name" value="SERPBoost Website">
+          <input type="hidden" name="_template" value="table">
 
-          <input type="hidden" name="redirect" value="https://serpboost.online/contact.html">
+          <input type="hidden" name="_next" value="https://serpboost.online/contact.html">
 
-          <input type="checkbox" name="botcheck" style="display:none;">
+          <input type="text" name="_honey" style="display:none">
 
           <div>
-            <label class="form-label">Full Name</label>
-            <input type="text" name="Full Name" placeholder="Your full name" required class="input-field">
+            <label class="form-label" for="full-name">Full Name</label>
+            <input id="full-name" type="text" name="Full Name" placeholder="Your full name" autocomplete="name" required class="input-field">
           </div>
 
           <div>
-            <label class="form-label">Email Address</label>
-            <input type="email" name="email" placeholder="Your email address" required class="input-field">
+            <label class="form-label" for="email-address">Email Address</label>
+            <input id="email-address" type="email" name="Email Address" placeholder="Your email address" autocomplete="email" required class="input-field">
           </div>
 
           <div>
-            <label class="form-label">Website URL</label>
-            <input type="url" name="Website URL" placeholder="https://yourwebsite.com" class="input-field">
+            <label class="form-label" for="website-url">Website URL</label>
+            <input id="website-url" type="url" name="Website URL" placeholder="https://yourwebsite.com" autocomplete="url" class="input-field">
           </div>
 
           <div>
-            <label class="form-label">Service Required</label>
+            <label class="form-label" for="service-required">Service Required</label>
 
-            <select name="Service Required" required class="input-field">
+            <select id="service-required" name="Service Required" required class="input-field">
               <option value="" disabled selected>Select a service</option>
               <option value="Guest Posting">Guest Posting</option>
               <option value="Authority Link Building">Authority Link Building</option>
@@ -592,14 +592,14 @@ textarea.input-field{
           </div>
 
           <div>
-            <label class="form-label">Target Country / Niche</label>
-            <input type="text" name="Target Country / Niche" placeholder="Example: USA / SaaS / Business / Finance" class="input-field">
+            <label class="form-label" for="target-country-niche">Target Country / Niche</label>
+            <input id="target-country-niche" type="text" name="Target Country / Niche" placeholder="Example: USA / SaaS / Business / Finance" class="input-field">
           </div>
 
           <div>
-            <label class="form-label">Project Message</label>
+            <label class="form-label" for="project-message">Project Message</label>
 
-            <textarea rows="5" name="message" placeholder="Tell us about your SEO goals, target keywords, required backlinks or campaign details..." required class="input-field"></textarea>
+            <textarea id="project-message" rows="5" name="Project Message" placeholder="Tell us about your SEO goals, target keywords, required backlinks or campaign details..." required class="input-field"></textarea>
           </div>
 
           <button type="submit" class="w-full rounded-lg py-5 font-extrabold uppercase tracking-widest transition-all duration-300 shadow-lg hover:-translate-y-1" style="background:linear-gradient(135deg,#2DEACB,#FF3D81);color:#02181B;">
