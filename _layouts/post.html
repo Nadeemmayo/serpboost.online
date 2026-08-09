@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title | escape }} | SERPBoost</title>
+
+<meta name="description" content="{{ page.description | default: page.title | escape }}">
+<meta name="author" content="SERPBoost">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<link rel="icon"
+href="https://cdn-icons-png.flaticon.com/512/2413/2413026.png"
+type="image/png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SERPBoost">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: page.title | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+
+{% if page.thumbnail %}
+<meta property="og:image" content="{{ page.thumbnail | absolute_url }}">
+{% else %}
+<meta property="og:image" content="https://serpboost.online/preview.jpg">
+{% endif %}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | default: page.title | escape }}">
+
+{% if page.thumbnail %}
+<meta name="twitter:image" content="{{ page.thumbnail | absolute_url }}">
+{% else %}
+<meta name="twitter:image" content="https://serpboost.online/preview.jpg">
+{% endif %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+background:#031C20;
+color:#D7ECE9;
+font-family:"Manrope",sans-serif;
+overflow-x:hidden;
+}
+
+h1,h2,h3,h4,.display{
+font-family:"Space Grotesk",sans-serif;
+}
+
+.mint-text{color:#2DEACB;}
+.magenta-text{color:#FF3D81;}
+.silver-text{color:#D7ECE9;}
+
+.logo-mark{
+width:46px;
+height:46px;
+margin-right:10px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+color:#02181B;
+font-family:"Space Grotesk",sans-serif;
+font-size:18px;
+font-weight:800;
+background:linear-gradient(135deg,#2DEACB,#FF3D81);
+}
+
+.main-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:12px 25px;
+border-radius:6px;
+color:#02181B;
+font-weight:800;
+background:linear-gradient(135deg,#2DEACB,#FF3D81);
+transition:.3s;
+}
+
+.main-btn:hover{
+transform:scale(1.05);
+}
+
+.article-hero{
+background:
+radial-gradient(circle at top left,rgba(45,234,203,.18),transparent 32%),
+radial-gradient(circle at bottom right,rgba(255,61,129,.15),transparent 38%),
+linear-gradient(135deg,#04262B,#083A3F 45%,#031C20);
+}
+
+.article-container{
+max-width:900px;
+margin:auto;
+}
+
+.article-image{
+width:100%;
+max-height:500px;
+object-fit:cover;
+border-radius:12px;
+border:1px solid rgba(45,234,203,.22);
+box-shadow:0 25px 60px rgba(0,0,0,.30);
+}
+
+.article-content{
+font-size:17px;
+line-height:1.9;
+color:#C8E0DC;
+}
+
+.article-content h2{
+font-size:30px;
+font-weight:700;
+color:#D7ECE9;
+margin-top:45px;
+margin-bottom:18px;
+}
+
+.article-content h3{
+font-size:23px;
+font-weight:700;
+color:#2DEACB;
+margin-top:35px;
+margin-bottom:14px;
+}
+
+.article-content p{
+margin-bottom:22px;
+}
+
+.article-content a{
+color:#FF3D81;
+text-decoration:underline;
+font-weight:700;
+}
+
+.article-content strong{
+color:#D7ECE9;
+}
+
+.article-content ul,
+.article-content ol{
+padding-left:28px;
+margin:20px 0;
+}
+
+.article-content ul{
+list-style:disc;
+}
+
+.article-content ol{
+list-style:decimal;
+}
+
+.article-content li{
+margin-bottom:10px;
+}
+
+.article-content blockquote{
+border-left:4px solid #2DEACB;
+padding:15px 20px;
+margin:30px 0;
+background:rgba(45,234,203,.06);
+color:#D7ECE9;
+}
+
+.category-pill{
+display:inline-block;
+padding:7px 14px;
+border-radius:999px;
+color:#2DEACB;
+font-size:11px;
+font-weight:800;
+letter-spacing:1px;
+text-transform:uppercase;
+background:rgba(45,234,203,.09);
+border:1px solid rgba(45,234,203,.25);
+}
+
+.mobile-menu{
+display:none;
+}
+
+.mobile-menu.active{
+display:block;
+}
+
+@media(max-width:768px){
+
+.desktop-menu{
+display:none!important;
+}
+
+.mobile-menu{
+padding:18px 24px;
+background:#04262B;
+border-top:1px solid rgba(45,234,203,.22);
+}
+
+.mobile-menu a{
+display:block;
+padding:12px 0;
+color:#D7ECE9;
+font-size:13px;
+font-weight:700;
+text-transform:uppercase;
+border-bottom:1px solid rgba(45,234,203,.14);
+}
+
+.article-content{
+font-size:16px;
+}
+
+.article-content h2{
+font-size:26px;
+}
+
+}
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"BlogPosting",
+"headline":{{ page.title | jsonify }},
+"description":{{ page.description | default: page.title | jsonify }},
+"url":"{{ page.url | absolute_url }}",
+"datePublished":"{{ page.date | date_to_xmlschema }}",
+"author":{
+"@type":"Organization",
+"name":"SERPBoost"
+},
+"publisher":{
+"@type":"Organization",
+"name":"SERPBoost",
+"url":"https://serpboost.online/"
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<nav class="sticky top-0 z-50 backdrop-blur-xl border-b"
+style="background:rgba(4,38,43,.92);border-color:rgba(45,234,203,.22);">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+<a href="{{ '/' | relative_url }}"
+class="text-2xl font-semibold flex items-center display silver-text">
+
+<span class="logo-mark">S</span>
+
+SERP<span class="mint-text">BOOST</span>
+
+</a>
+
+<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center tracking-wide">
+
+<a href="{{ '/' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+Home
+</a>
+
+<a href="{{ '/about.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+About
+</a>
+
+<a href="{{ '/services.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+Services
+</a>
+
+<a href="{{ '/portfolio.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+Portfolio
+</a>
+
+<a href="{{ '/all-niches-sites.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+All Niches
+</a>
+
+<a href="{{ '/blog.html' | relative_url }}" class="mint-text">
+Blog
+</a>
+
+<a href="{{ '/FAQs.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
+FAQ
+</a>
+
+<a href="{{ '/contact.html' | relative_url }}" class="main-btn">
+Contact
+</a>
+
+</div>
+
+<button class="mobile-menu-btn text-3xl md:hidden silver-text"
+type="button"
+aria-label="Open navigation menu"
+aria-expanded="false">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+</div>
+
+<div class="mobile-menu">
+
+<a href="{{ '/' | relative_url }}">Home</a>
+<a href="{{ '/about.html' | relative_url }}">About</a>
+<a href="{{ '/services.html' | relative_url }}">Services</a>
+<a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
+<a href="{{ '/all-niches-sites.html' | relative_url }}">All Niches</a>
+<a href="{{ '/blog.html' | relative_url }}" class="mint-text">Blog</a>
+<a href="{{ '/FAQs.html' | relative_url }}">FAQ</a>
+<a href="{{ '/contact.html' | relative_url }}">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="article-hero py-20 px-6">
+
+<div class="article-container text-center">
+
+{% if page.category %}
+<span class="category-pill">
+{{ page.category | escape }}
+</span>
+{% endif %}
+
+<h1 class="text-4xl md:text-6xl font-semibold leading-tight mt-6 mb-6 silver-text display">
+{{ page.title | escape }}
+</h1>
+
+{% if page.description %}
+<p class="text-[#A9CFC9] text-lg md:text-xl max-w-3xl mx-auto leading-8">
+{{ page.description | escape }}
+</p>
+{% endif %}
+
+<div class="mt-7 text-sm text-[#8DBCB5]">
+
+{% if page.date %}
+<span>
+<i class="far fa-calendar mr-2"></i>
+{{ page.date | date: "%B %d, %Y" }}
+</span>
+{% endif %}
+
+</div>
+
+</div>
+
+</section>
+
+<main class="py-14 px-6">
+
+<article class="article-container">
+
+{% if page.thumbnail and page.thumbnail != "" %}
+
+<img
+src="{{ page.thumbnail | relative_url }}"
+alt="{{ page.thumbnail_alt | default: page.title | escape }}"
+class="article-image mb-12">
+
+{% endif %}
+
+<div class="article-content">
+{{ content }}
+</div>
+
+<div class="mt-14 pt-8 border-t"
+style="border-color:rgba(45,234,203,.18);">
+
+<a href="{{ '/blog.html' | relative_url }}"
+class="main-btn">
+
+<i class="fas fa-arrow-left"></i>
+Back To Blog
+
+</a>
+
+</div>
+
+</article>
+
+</main>
+
+<footer class="pt-12 pb-8 px-6 text-center"
+style="background:#02181B;border-top:1px solid rgba(45,234,203,.25);">
+
+<h3 class="text-2xl font-semibold mb-3 display silver-text">
+SERP<span class="mint-text">BOOST</span>
+</h3>
+
+<p class="text-[#A9CFC9]">
+Guest Posting • Authority Backlinks • Niche Edits • Off-Page SEO
+</p>
+
+<p class="text-[#6FA69F] text-sm mt-6">
+© 2026 SERPBoost. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+const menuBtn=document.querySelector(".mobile-menu-btn");
+const mobileMenu=document.querySelector(".mobile-menu");
+
+if(menuBtn&&mobileMenu){
+
+menuBtn.addEventListener("click",function(){
+
+mobileMenu.classList.toggle("active");
+
+const isOpen=mobileMenu.classList.contains("active");
+
+menuBtn.setAttribute("aria-expanded",String(isOpen));
+
+const icon=menuBtn.querySelector("i");
+
+if(icon){
+icon.className=isOpen ? "fas fa-xmark" : "fas fa-bars";
+}
+
+});
+
+}
+</script>
+
+</body>
+</html>
