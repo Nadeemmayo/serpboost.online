@@ -1,3 +1,6 @@
+here---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +31,6 @@
 >
 
 <meta property="og:type" content="website">
-
 <meta property="og:site_name" content="SERPBoost">
 
 <meta
@@ -300,6 +302,16 @@ h4,
   font-weight: 800;
   letter-spacing: 1px;
   background: #02181B;
+  z-index: 3;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .blog-image i {
@@ -405,24 +417,7 @@ h4,
     "@type": "Organization",
     "name": "SERPBoost",
     "url": "https://serpboost.online/"
-  },
-  "blogPost": [
-    {
-      "@type": "BlogPosting",
-      "headline": "How To Survive Google AI Overviews",
-      "url": "https://serpboost.online/blog-post-1.html"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Backlink Strategies That Still Work",
-      "url": "https://serpboost.online/blog-post-2.html"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "E-E-A-T And Real SEO Experience",
-      "url": "https://serpboost.online/blog-post-3.html"
-    }
-  ]
+  }
 }
 </script>
 
@@ -445,7 +440,7 @@ h4,
   >
 
     <a
-      href="index.html"
+      href="{{ '/' | relative_url }}"
       class="text-2xl font-semibold flex items-center display silver-text"
     >
 
@@ -460,56 +455,56 @@ h4,
     >
 
       <a
-        href="index.html"
+        href="{{ '/' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Home
       </a>
 
       <a
-        href="about.html"
+        href="{{ '/about.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         About
       </a>
 
       <a
-        href="services.html"
+        href="{{ '/services.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Services
       </a>
 
       <a
-        href="portfolio.html"
+        href="{{ '/portfolio.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Portfolio
       </a>
 
       <a
-        href="all-niches-sites.html"
+        href="{{ '/all-niches-sites.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         All Niches
       </a>
 
       <a
-        href="blog.html"
+        href="{{ '/blog.html' | relative_url }}"
         class="mint-text"
       >
         Blog
       </a>
 
       <a
-        href="FAQs.html"
+        href="{{ '/FAQs.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         FAQ
       </a>
 
       <a
-        href="contact.html"
+        href="{{ '/contact.html' | relative_url }}"
         class="main-btn text-sm px-6 py-3"
       >
         Contact
@@ -532,35 +527,35 @@ h4,
 
   <div class="mobile-menu">
 
-    <a href="index.html">
+    <a href="{{ '/' | relative_url }}">
       Home
     </a>
 
-    <a href="about.html">
+    <a href="{{ '/about.html' | relative_url }}">
       About
     </a>
 
-    <a href="services.html">
+    <a href="{{ '/services.html' | relative_url }}">
       Services
     </a>
 
-    <a href="portfolio.html">
+    <a href="{{ '/portfolio.html' | relative_url }}">
       Portfolio
     </a>
 
-    <a href="all-niches-sites.html">
+    <a href="{{ '/all-niches-sites.html' | relative_url }}">
       All Niches
     </a>
 
-    <a href="blog.html" class="mint-text">
+    <a href="{{ '/blog.html' | relative_url }}" class="mint-text">
       Blog
     </a>
 
-    <a href="FAQs.html">
+    <a href="{{ '/FAQs.html' | relative_url }}">
       FAQ
     </a>
 
-    <a href="contact.html">
+    <a href="{{ '/contact.html' | relative_url }}">
       Contact
     </a>
 
@@ -615,7 +610,7 @@ h4,
       </a>
 
       <a
-        href="contact.html"
+        href="{{ '/contact.html' | relative_url }}"
         class="outline-btn"
       >
         <i class="fas fa-comments"></i>
@@ -740,7 +735,88 @@ h4,
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
     >
 
-      <!-- ARTICLE 1 -->
+      <!-- ================================= -->
+      <!-- CMS / JEKYLL POSTS START HERE -->
+      <!-- ================================= -->
+
+      {% for post in site.posts %}
+
+      <article class="blog-card">
+
+        {% if post.thumbnail and post.thumbnail != "" %}
+
+        <div class="blog-image">
+
+          <img
+            src="{{ post.thumbnail | relative_url }}"
+            alt="{{ post.thumbnail_alt | default: post.title | escape }}"
+            loading="lazy"
+          >
+
+        </div>
+
+        {% else %}
+
+        <div class="blog-image">
+
+          <i class="fas fa-chart-line"></i>
+
+        </div>
+
+        {% endif %}
+
+        <div class="blog-content">
+
+          {% if post.category %}
+
+          <span class="category-pill">
+
+            <i class="fas fa-book-open"></i>
+
+            {{ post.category | escape }}
+
+          </span>
+
+          {% endif %}
+
+          <h3
+            class="text-2xl font-semibold mt-5 mb-4 leading-tight silver-text display"
+          >
+            {{ post.title | escape }}
+          </h3>
+
+          {% if post.description %}
+
+          <p
+            class="text-[#A9CFC9] text-sm mb-7 leading-7"
+          >
+            {{ post.description | escape }}
+          </p>
+
+          {% endif %}
+
+          <a
+            href="{{ post.url | relative_url }}"
+            class="read-link"
+          >
+            Read Article
+
+            <i class="fas fa-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </article>
+
+      {% endfor %}
+
+      <!-- ================================= -->
+      <!-- CMS / JEKYLL POSTS END HERE -->
+      <!-- ================================= -->
+
+
+      <!-- EXISTING STATIC ARTICLE 1 -->
 
       <article class="blog-card">
 
@@ -774,7 +850,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-1.html"
+            href="{{ '/blog-post-1.html' | relative_url }}"
             class="read-link"
           >
             Read Case Study
@@ -786,7 +862,7 @@ h4,
 
       </article>
 
-      <!-- ARTICLE 2 -->
+      <!-- EXISTING STATIC ARTICLE 2 -->
 
       <article class="blog-card">
 
@@ -820,7 +896,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-2.html"
+            href="{{ '/blog-post-2.html' | relative_url }}"
             class="read-link"
           >
             Read Full Guide
@@ -832,7 +908,7 @@ h4,
 
       </article>
 
-      <!-- ARTICLE 3 -->
+      <!-- EXISTING STATIC ARTICLE 3 -->
 
       <article class="blog-card">
 
@@ -866,7 +942,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-3.html"
+            href="{{ '/blog-post-3.html' | relative_url }}"
             class="read-link"
           >
             Read Full Guide
@@ -878,7 +954,7 @@ h4,
 
       </article>
 
-      <!-- ARTICLE 4 -->
+      <!-- EXISTING STATIC ARTICLE 4 -->
 
       <article class="blog-card">
 
@@ -912,7 +988,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-1.html"
+            href="{{ '/blog-post-1.html' | relative_url }}"
             class="read-link"
           >
             Read Full Guide
@@ -924,7 +1000,7 @@ h4,
 
       </article>
 
-      <!-- ARTICLE 5 -->
+      <!-- EXISTING STATIC ARTICLE 5 -->
 
       <article class="blog-card">
 
@@ -958,7 +1034,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-2.html"
+            href="{{ '/blog-post-2.html' | relative_url }}"
             class="read-link"
           >
             Read Full Guide
@@ -970,7 +1046,7 @@ h4,
 
       </article>
 
-      <!-- ARTICLE 6 -->
+      <!-- EXISTING STATIC ARTICLE 6 -->
 
       <article class="blog-card">
 
@@ -1004,7 +1080,7 @@ h4,
           </p>
 
           <a
-            href="blog-post-3.html"
+            href="{{ '/blog-post-3.html' | relative_url }}"
             class="read-link"
           >
             Read Full Guide
@@ -1057,7 +1133,7 @@ h4,
     <div class="flex justify-center gap-4 flex-wrap">
 
       <a
-        href="contact.html"
+        href="{{ '/contact.html' | relative_url }}"
         class="px-8 py-4 rounded font-bold hover:scale-105 transition"
         style="
           background: #02181B;
@@ -1068,7 +1144,7 @@ h4,
       </a>
 
       <a
-        href="services.html"
+        href="{{ '/services.html' | relative_url }}"
         class="px-8 py-4 rounded font-bold hover:scale-105 transition"
         style="
           background: #031C20;
@@ -1079,7 +1155,7 @@ h4,
       </a>
 
       <a
-        href="FAQs.html"
+        href="{{ '/FAQs.html' | relative_url }}"
         class="px-8 py-4 rounded font-bold hover:scale-105 transition"
         style="
           background: rgba(2, 24, 27, 0.85);
@@ -1131,56 +1207,56 @@ h4,
     >
 
       <a
-        href="index.html"
+        href="{{ '/' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Home
       </a>
 
       <a
-        href="about.html"
+        href="{{ '/about.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         About
       </a>
 
       <a
-        href="services.html"
+        href="{{ '/services.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Services
       </a>
 
       <a
-        href="portfolio.html"
+        href="{{ '/portfolio.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Portfolio
       </a>
 
       <a
-        href="all-niches-sites.html"
+        href="{{ '/all-niches-sites.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         All Niches
       </a>
 
       <a
-        href="blog.html"
+        href="{{ '/blog.html' | relative_url }}"
         class="mint-text"
       >
         Blog
       </a>
 
       <a
-        href="FAQs.html"
+        href="{{ '/FAQs.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         FAQ
       </a>
 
       <a
-        href="contact.html"
+        href="{{ '/contact.html' | relative_url }}"
         class="silver-text hover:text-[#2DEACB] transition"
       >
         Contact
@@ -1269,4 +1345,4 @@ if (menuBtn && mobileMenu) {
 </script>
 
 </body>
-</html>
+  </html>
