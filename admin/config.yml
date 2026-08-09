@@ -1,4 +1,4 @@
-Enterbackend:
+backend:
   name: github
   repo: Nadeemmayo/serpboost.online
   branch: main
