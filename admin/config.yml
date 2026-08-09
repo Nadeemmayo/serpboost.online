@@ -7,7 +7,6 @@ backend:
 
 site_url: https://serpboost.online
 display_url: https://serpboost.online
-
 logo_url: https://serpboost.online/favicon.ico
 
 media_folder: "images/uploads"
@@ -21,6 +20,8 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
 
     fields:
       - label: "Layout"
@@ -32,7 +33,7 @@ collections:
         name: "title"
         widget: "string"
 
-      - label: "Date"
+      - label: "Publish Date"
         name: "date"
         widget: "datetime"
 
@@ -45,6 +46,7 @@ collections:
         name: "category"
         widget: "select"
         options:
+          - "SEO"
           - "Guest Posting"
           - "Link Building"
           - "Niche Edits"
@@ -54,31 +56,34 @@ collections:
           - "Authority Building"
           - "AI Search"
 
-      - label: "Description"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+
+      - label: "Short Description"
         name: "description"
         widget: "text"
 
       - label: "Meta Title"
         name: "meta_title"
         widget: "string"
-        required: false
 
       - label: "Meta Description"
         name: "meta_description"
         widget: "text"
-        required: false
 
       - label: "Focus Keyword"
         name: "focus_keyword"
         widget: "string"
         required: false
 
-      - label: "Thumbnail"
+      - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
         required: false
 
-      - label: "Thumbnail Alt Text"
+      - label: "Featured Image Alt Text"
         name: "thumbnail_alt"
         widget: "string"
         required: false
