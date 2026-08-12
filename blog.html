@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /blog.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -381,8 +382,6 @@ h4,
 
 <body>
 
-<!-- NAVIGATION -->
-
 <nav
   class="sticky top-0 z-50 backdrop-blur-xl border-b"
   style="background:rgba(4,38,43,.92);border-color:rgba(45,234,203,.22);"
@@ -401,19 +400,12 @@ SERP<span class="mint-text">BOOST</span>
 <div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center tracking-wide">
 
 <a href="{{ '/' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Home</a>
-
 <a href="{{ '/about.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">About</a>
-
 <a href="{{ '/services.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Services</a>
-
 <a href="{{ '/portfolio.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Portfolio</a>
-
 <a href="{{ '/all-niches-sites.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">All Niches</a>
-
 <a href="{{ '/blog.html' | relative_url }}" class="mint-text">Blog</a>
-
 <a href="{{ '/FAQs.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">FAQ</a>
-
 <a href="{{ '/contact.html' | relative_url }}" class="main-btn text-sm px-6 py-3">Contact</a>
 
 </div>
@@ -443,8 +435,6 @@ SERP<span class="mint-text">BOOST</span>
 </div>
 
 </nav>
-
-<!-- HERO -->
 
 <section class="hero-bg py-24 px-6 text-center">
 
@@ -485,19 +475,13 @@ Get Free Consultation
 
 </section>
 
-<!-- TOPIC FEATURES -->
-
 <section class="dark-bg py-14 px-6">
 
 <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
 
 <div class="glass-card rounded p-7">
 <i class="fas fa-link text-3xl mint-text mb-4"></i>
-
-<h3 class="font-semibold text-xl silver-text display">
-Link Building
-</h3>
-
+<h3 class="font-semibold text-xl silver-text display">Link Building</h3>
 <p class="text-[#A9CFC9] text-sm mt-3 leading-6">
 Backlink strategies designed to support genuine website authority and sustainable organic growth.
 </p>
@@ -505,11 +489,7 @@ Backlink strategies designed to support genuine website authority and sustainabl
 
 <div class="glass-card rounded p-7">
 <i class="fas fa-chart-line text-3xl mint-text mb-4"></i>
-
-<h3 class="font-semibold text-xl silver-text display">
-SEO Growth
-</h3>
-
+<h3 class="font-semibold text-xl silver-text display">SEO Growth</h3>
 <p class="text-[#A9CFC9] text-sm mt-3 leading-6">
 Practical ranking insights for improving organic visibility, traffic and search performance.
 </p>
@@ -517,11 +497,7 @@ Practical ranking insights for improving organic visibility, traffic and search 
 
 <div class="glass-card rounded p-7">
 <i class="fas fa-shield-halved text-3xl mint-text mb-4"></i>
-
-<h3 class="font-semibold text-xl silver-text display">
-Authority Building
-</h3>
-
+<h3 class="font-semibold text-xl silver-text display">Authority Building</h3>
 <p class="text-[#A9CFC9] text-sm mt-3 leading-6">
 Trusted content, quality publications and relevant link sources for stronger SEO authority.
 </p>
@@ -530,8 +506,6 @@ Trusted content, quality publications and relevant link sources for stronger SEO
 </div>
 
 </section>
-
-<!-- BLOG ARTICLES -->
 
 <section
   id="articles"
@@ -567,13 +541,11 @@ niche edits, off-page SEO and modern search ranking strategies.
 {% if post.thumbnail and post.thumbnail != "" %}
 
 <div class="blog-image">
-
 <img
   src="{{ post.thumbnail | relative_url }}"
   alt="{{ post.thumbnail_alt | default: post.title | escape }}"
   loading="lazy"
 >
-
 </div>
 
 {% else %}
@@ -642,8 +614,6 @@ Our latest SEO guides will appear here automatically.
 
 </section>
 
-<!-- CTA -->
-
 <section class="py-20 px-6 dark-bg">
 
 <div
@@ -699,8 +669,6 @@ Read FAQ
 
 </section>
 
-<!-- FOOTER -->
-
 <footer
   class="pt-16 pb-8 px-6"
   style="background:#02181B;border-top:1px solid rgba(45,234,203,.25);"
@@ -723,19 +691,12 @@ off-page SEO solutions designed to support sustainable search visibility.
 <div class="flex justify-center gap-6 flex-wrap mt-8 font-bold uppercase text-sm">
 
 <a href="{{ '/' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Home</a>
-
 <a href="{{ '/about.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">About</a>
-
 <a href="{{ '/services.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Services</a>
-
 <a href="{{ '/portfolio.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Portfolio</a>
-
 <a href="{{ '/all-niches-sites.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">All Niches</a>
-
 <a href="{{ '/blog.html' | relative_url }}" class="mint-text">Blog</a>
-
 <a href="{{ '/FAQs.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">FAQ</a>
-
 <a href="{{ '/contact.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">Contact</a>
 
 </div>
@@ -761,44 +722,32 @@ if (menuBtn && mobileMenu) {
 
     const isOpen = mobileMenu.classList.contains("active");
 
-    menuBtn.setAttribute(
-      "aria-expanded",
-      String(isOpen)
-    );
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
 
     const icon = menuBtn.querySelector("i");
 
     if (icon) {
-      icon.className =
-        isOpen
-          ? "fas fa-xmark"
-          : "fas fa-bars";
+      icon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
     }
 
   });
 
-  mobileMenu
-    .querySelectorAll("a")
-    .forEach(function (link) {
+  mobileMenu.querySelectorAll("a").forEach(function (link) {
 
-      link.addEventListener("click", function () {
+    link.addEventListener("click", function () {
 
-        mobileMenu.classList.remove("active");
+      mobileMenu.classList.remove("active");
+      menuBtn.setAttribute("aria-expanded", "false");
 
-        menuBtn.setAttribute(
-          "aria-expanded",
-          "false"
-        );
+      const icon = menuBtn.querySelector("i");
 
-        const icon = menuBtn.querySelector("i");
-
-        if (icon) {
-          icon.className = "fas fa-bars";
-        }
-
-      });
+      if (icon) {
+        icon.className = "fas fa-bars";
+      }
 
     });
+
+  });
 
 }
 
