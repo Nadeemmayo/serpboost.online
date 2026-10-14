@@ -2,453 +2,145 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>{{ page.title | escape }} | SERPBoost</title>
-
-<meta name="description" content="{{ page.description | default: page.title | escape }}">
-<meta name="author" content="SERPBoost">
-<meta name="robots" content="index, follow, max-image-preview:large">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.meta_title | default: page.title | escape }} | SERPBoost</title>
+<meta name="description" content="{{ page.meta_description | default: page.description | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-
-<link rel="icon"
-href="https://cdn-icons-png.flaticon.com/512/2413/2413026.png"
-type="image/png">
-
-<meta property="og:type" content="article">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#06120B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta property="og:site_name" content="SERPBoost">
-<meta property="og:title" content="{{ page.title | escape }}">
-<meta property="og:description" content="{{ page.description | default: page.title | escape }}">
+<meta property="og:title" content="{{ page.meta_title | default: page.title | escape }}">
+<meta property="og:description" content="{{ page.meta_description | default: page.description | escape }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-
-{% if page.thumbnail %}
-<meta property="og:image" content="{{ page.thumbnail | absolute_url }}">
-{% else %}
-<meta property="og:image" content="https://serpboost.online/preview.jpg">
-{% endif %}
-
+<meta property="og:type" content="article">
+<meta property="og:image" {% if page.thumbnail %}content="{{ page.thumbnail | absolute_url }}"{% else %}content="https://serpboost.online/assets/img/og-image.png"{% endif %}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title | escape }}">
-<meta name="twitter:description" content="{{ page.description | default: page.title | escape }}">
-
-{% if page.thumbnail %}
-<meta name="twitter:image" content="{{ page.thumbnail | absolute_url }}">
-{% else %}
-<meta name="twitter:image" content="https://serpboost.online/preview.jpg">
-{% endif %}
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<style>
-html{
-scroll-behavior:smooth;
-}
-
-body{
-margin:0;
-background:#031C20;
-color:#D7ECE9;
-font-family:"Manrope",sans-serif;
-overflow-x:hidden;
-}
-
-h1,h2,h3,h4,.display{
-font-family:"Space Grotesk",sans-serif;
-}
-
-.mint-text{color:#2DEACB;}
-.magenta-text{color:#FF3D81;}
-.silver-text{color:#D7ECE9;}
-
-.logo-mark{
-width:46px;
-height:46px;
-margin-right:10px;
-display:inline-flex;
-align-items:center;
-justify-content:center;
-border-radius:8px;
-color:#02181B;
-font-family:"Space Grotesk",sans-serif;
-font-size:18px;
-font-weight:800;
-background:linear-gradient(135deg,#2DEACB,#FF3D81);
-}
-
-.main-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-padding:12px 25px;
-border-radius:6px;
-color:#02181B;
-font-weight:800;
-background:linear-gradient(135deg,#2DEACB,#FF3D81);
-transition:.3s;
-}
-
-.main-btn:hover{
-transform:scale(1.05);
-}
-
-.article-hero{
-background:
-radial-gradient(circle at top left,rgba(45,234,203,.18),transparent 32%),
-radial-gradient(circle at bottom right,rgba(255,61,129,.15),transparent 38%),
-linear-gradient(135deg,#04262B,#083A3F 45%,#031C20);
-}
-
-.article-container{
-max-width:900px;
-margin:auto;
-}
-
-.article-image{
-width:100%;
-max-height:500px;
-object-fit:cover;
-border-radius:12px;
-border:1px solid rgba(45,234,203,.22);
-box-shadow:0 25px 60px rgba(0,0,0,.30);
-}
-
-.article-content{
-font-size:17px;
-line-height:1.9;
-color:#C8E0DC;
-}
-
-.article-content h2{
-font-size:30px;
-font-weight:700;
-color:#D7ECE9;
-margin-top:45px;
-margin-bottom:18px;
-}
-
-.article-content h3{
-font-size:23px;
-font-weight:700;
-color:#2DEACB;
-margin-top:35px;
-margin-bottom:14px;
-}
-
-.article-content p{
-margin-bottom:22px;
-}
-
-.article-content a{
-color:#FF3D81;
-text-decoration:underline;
-font-weight:700;
-}
-
-.article-content strong{
-color:#D7ECE9;
-}
-
-.article-content ul,
-.article-content ol{
-padding-left:28px;
-margin:20px 0;
-}
-
-.article-content ul{
-list-style:disc;
-}
-
-.article-content ol{
-list-style:decimal;
-}
-
-.article-content li{
-margin-bottom:10px;
-}
-
-.article-content blockquote{
-border-left:4px solid #2DEACB;
-padding:15px 20px;
-margin:30px 0;
-background:rgba(45,234,203,.06);
-color:#D7ECE9;
-}
-
-.category-pill{
-display:inline-block;
-padding:7px 14px;
-border-radius:999px;
-color:#2DEACB;
-font-size:11px;
-font-weight:800;
-letter-spacing:1px;
-text-transform:uppercase;
-background:rgba(45,234,203,.09);
-border:1px solid rgba(45,234,203,.25);
-}
-
-.mobile-menu{
-display:none;
-}
-
-.mobile-menu.active{
-display:block;
-}
-
-@media(max-width:768px){
-
-.desktop-menu{
-display:none!important;
-}
-
-.mobile-menu{
-padding:18px 24px;
-background:#04262B;
-border-top:1px solid rgba(45,234,203,.22);
-}
-
-.mobile-menu a{
-display:block;
-padding:12px 0;
-color:#D7ECE9;
-font-size:13px;
-font-weight:700;
-text-transform:uppercase;
-border-bottom:1px solid rgba(45,234,203,.14);
-}
-
-.article-content{
-font-size:16px;
-}
-
-.article-content h2{
-font-size:26px;
-}
-
-}
-</style>
-
+<meta name="twitter:title" content="{{ page.meta_title | default: page.title | escape }}">
+<meta name="twitter:description" content="{{ page.meta_description | default: page.description | escape }}">
+<meta name="twitter:image" {% if page.thumbnail %}content="{{ page.thumbnail | absolute_url }}"{% else %}content="https://serpboost.online/assets/img/og-image.png"{% endif %}>
+<link rel="preload" href="/assets/fonts/red-hat-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FGZZ0FRFP"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3FGZZ0FRFP');</script>
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"BlogPosting",
-"headline":{{ page.title | jsonify }},
-"description":{{ page.description | default: page.title | jsonify }},
-"url":"{{ page.url | absolute_url }}",
-"datePublished":"{{ page.date | date_to_xmlschema }}",
-"author":{
-"@type":"Organization",
-"name":"SERPBoost"
-},
-"publisher":{
-"@type":"Organization",
-"name":"SERPBoost",
-"url":"https://serpboost.online/"
-}
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://serpboost.online/#organization",
+   "name": "SERPBoost",
+   "url": "https://serpboost.online/",
+   "logo": "https://serpboost.online/assets/img/logo.png",
+   "image": "https://serpboost.online/assets/img/og-image.png",
+   "description": "SERPBoost is a fast-moving digital agency helping startups and growing brands gain search visibility quickly through SEO, link building, websites and paid ads.",
+   "email": "owner@serpboost.online",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  }
+ ]
 }
 </script>
-
 </head>
-
-<body>
-
-<nav class="sticky top-0 z-50 backdrop-blur-xl border-b"
-style="background:rgba(4,38,43,.92);border-color:rgba(45,234,203,.22);">
-
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-<a href="{{ '/' | relative_url }}"
-class="text-2xl font-semibold flex items-center display silver-text">
-
-<span class="logo-mark">S</span>
-
-SERP<span class="mint-text">BOOST</span>
-
-</a>
-
-<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center tracking-wide">
-
-<a href="{{ '/' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-Home
-</a>
-
-<a href="{{ '/about.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-About
-</a>
-
-<a href="{{ '/services.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-Services
-</a>
-
-<a href="{{ '/portfolio.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-Portfolio
-</a>
-
-<a href="{{ '/all-niches-sites.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-All Niches
-</a>
-
-<a href="{{ '/blog.html' | relative_url }}" class="mint-text">
-Blog
-</a>
-
-<a href="{{ '/FAQs.html' | relative_url }}" class="silver-text hover:text-[#2DEACB] transition">
-FAQ
-</a>
-
-<a href="{{ '/contact.html' | relative_url }}" class="main-btn">
-Contact
-</a>
-
-</div>
-
-<button class="mobile-menu-btn text-3xl md:hidden silver-text"
-type="button"
-aria-label="Open navigation menu"
-aria-expanded="false">
-
-<i class="fas fa-bars"></i>
-
-</button>
-
-</div>
-
-<div class="mobile-menu">
-
-<a href="{{ '/' | relative_url }}">Home</a>
-<a href="{{ '/about.html' | relative_url }}">About</a>
-<a href="{{ '/services.html' | relative_url }}">Services</a>
-<a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
-<a href="{{ '/all-niches-sites.html' | relative_url }}">All Niches</a>
-<a href="{{ '/blog.html' | relative_url }}" class="mint-text">Blog</a>
-<a href="{{ '/FAQs.html' | relative_url }}">FAQ</a>
-<a href="{{ '/contact.html' | relative_url }}">Contact</a>
-
-</div>
-
-</nav>
-
-<section class="article-hero py-20 px-6">
-
-<div class="article-container text-center">
-
-{% if page.category %}
-<span class="category-pill">
-{{ page.category | escape }}
-</span>
-{% endif %}
-
-<h1 class="text-4xl md:text-6xl font-semibold leading-tight mt-6 mb-6 silver-text display">
-{{ page.title | escape }}
-</h1>
-
-{% if page.description %}
-<p class="text-[#A9CFC9] text-lg md:text-xl max-w-3xl mx-auto leading-8">
-{{ page.description | escape }}
-</p>
-{% endif %}
-
-<div class="mt-7 text-sm text-[#8DBCB5]">
-
-{% if page.date %}
-<span>
-<i class="far fa-calendar mr-2"></i>
-{{ page.date | date: "%B %d, %Y" }}
-</span>
-{% endif %}
-
-</div>
-
-</div>
-
-</section>
-
-<main class="py-14 px-6">
-
-<article class="article-container">
-
-{% if page.thumbnail and page.thumbnail != "" %}
-
-<img
-src="{{ page.thumbnail | relative_url }}"
-alt="{{ page.thumbnail_alt | default: page.title | escape }}"
-class="article-image mb-12">
-
-{% endif %}
-
-<div class="article-content">
-{{ content }}
-</div>
-
-<div class="mt-14 pt-8 border-t"
-style="border-color:rgba(45,234,203,.18);">
-
-<a href="{{ '/blog.html' | relative_url }}"
-class="main-btn">
-
-<i class="fas fa-arrow-left"></i>
-Back To Blog
-
-</a>
-
-</div>
-
-</article>
-
+<body class="dark cards-tint">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>Fast-start SEO, websites & ads for startups and launches in the US, UK & Canada</span>
+    <div class="topbar-links"><a href="mailto:owner@serpboost.online"><i class="fas fa-envelope"></i>owner@serpboost.online</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="SERPBoost home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#15803D"/></linearGradient></defs><rect width="48" height="48" rx="13" fill="url(#lgh)"/><path d="M26.5 10 15 27h9l-2.5 11L33 21h-9Z" fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">SERP<span>Boost</span></span><span class="brand-tag">Faster search growth</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      <div class="has-menu"><button class="nav-link" type="button" aria-expanded="false">Inventory <i class="fas fa-chevron-down"></i></button><div class="menu menu-simple"><a href="/all-niches-sites.html"><i class="fas fa-layer-group" aria-hidden="true"></i>Publisher List</a></div></div>
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link active" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Get Quick Wins</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Get Quick Wins</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero page-hero"><div class="wrap" style="max-width:860px">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog.html">Blog</a>{% if page.category %}<span>/</span><b>{{ page.category | escape }}</b>{% endif %}</nav>
+  {% if page.category %}<span class="eyebrow">{{ page.category | escape }}</span>{% endif %}
+  <h1 style="font-size:clamp(2rem,4vw,3rem)">{{ page.title | escape }}</h1>
+  {% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}
+  <div class="post-meta" style="margin-top:18px"><span><i class="fas fa-user"></i> {{ page.author | default: "Nadeem Mayo" }}</span><span>·</span><span>{{ page.date | date: "%B %d, %Y" }}</span></div>
+</div></section>
+<section class="section"><article class="wrap article">
+  {% if page.thumbnail %}<img src="{{ page.thumbnail | relative_url }}" alt="{{ page.thumbnail_alt | default: page.title | escape }}">{% endif %}
+  {{ content }}
+  <div class="article-cta"><div><h3>Want this done for your website?</h3><p>Get a free audit and a practical plan from the SERPBoost team.</p></div><a class="btn btn-primary" href="/contact.html">Get Quick Wins</a></div>
+  <p style="margin-top:32px"><a href="/blog.html" style="text-decoration:none;font-weight:700"><i class="fas fa-arrow-left"></i> Back to all articles</a></p>
+</article></section>
 </main>
-
-<footer class="pt-12 pb-8 px-6 text-center"
-style="background:#02181B;border-top:1px solid rgba(45,234,203,.25);">
-
-<h3 class="text-2xl font-semibold mb-3 display silver-text">
-SERP<span class="mint-text">BOOST</span>
-</h3>
-
-<p class="text-[#A9CFC9]">
-Guest Posting • Authority Backlinks • Niche Edits • Off-Page SEO
-</p>
-
-<p class="text-[#6FA69F] text-sm mt-6">
-© 2026 SERPBoost. All Rights Reserved.
-</p>
-
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="SERPBoost home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#15803D"/></linearGradient></defs><rect width="48" height="48" rx="13" fill="url(#lgf)"/><path d="M26.5 10 15 27h9l-2.5 11L33 21h-9Z" fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">SERP<span>Boost</span></span><span class="brand-tag">Faster search growth</span></span></a>
+        <p>SERPBoost helps startups and launches get visible fast: quick-win SEO, authority links, rapid website builds and ads that start working in days.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/all-niches-sites.html">Publisher List</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:owner@serpboost.online"><i class="fas fa-envelope"></i>owner@serpboost.online</a><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope-open"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SERPBoost. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
 </footer>
-
-<script>
-const menuBtn=document.querySelector(".mobile-menu-btn");
-const mobileMenu=document.querySelector(".mobile-menu");
-
-if(menuBtn&&mobileMenu){
-
-menuBtn.addEventListener("click",function(){
-
-mobileMenu.classList.toggle("active");
-
-const isOpen=mobileMenu.classList.contains("active");
-
-menuBtn.setAttribute("aria-expanded",String(isOpen));
-
-const icon=menuBtn.querySelector("i");
-
-if(icon){
-icon.className=isOpen ? "fas fa-xmark" : "fas fa-bars";
-}
-
-});
-
-}
-</script>
-
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20SERPBoost%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>
