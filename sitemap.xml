@@ -1,152 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://serpboost.online/</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/"/>
     <lastmod>2026-11-03</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://serpboost.online/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/services.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/services.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/complete-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/complete-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/complete-seo.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/complete-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/complete-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/complete-seo.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/on-page-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/on-page-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/on-page-seo.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/on-page-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/on-page-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/on-page-seo.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/technical-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/technical-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/technical-seo.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/technical-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/technical-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/technical-seo.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/local-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/local-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/local-seo.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/local-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/local-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/local-seo.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/content-writing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/content-writing.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/content-writing.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/content-writing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/content-writing.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/content-writing.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/link-building.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/link-building.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/link-building.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/link-building.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/link-building.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/link-building.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/guest-posting.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/guest-posting.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/guest-posting.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/guest-posting.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/guest-posting.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/guest-posting.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/off-page-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/off-page-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/off-page-seo.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/off-page-seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/off-page-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/off-page-seo.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/google-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/google-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/google-ads.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/google-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/google-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/google-ads.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/meta-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/meta-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/meta-ads.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/meta-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/meta-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/meta-ads.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/facebook-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/facebook-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/facebook-ads.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/facebook-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/facebook-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/facebook-ads.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/instagram-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/instagram-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/instagram-ads.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/instagram-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/instagram-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/instagram-ads.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/tiktok-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/tiktok-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/tiktok-ads.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/tiktok-ads.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/tiktok-ads.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/tiktok-ads.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/web-development.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/web-development.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/web-development.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/web-development.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/web-development.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/web-development.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/custom-website.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/custom-website.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/custom-website.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/custom-website.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/custom-website.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/custom-website.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/ai-automation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/ai-automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/ai-automation.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/ai-automation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/ai-automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/ai-automation.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serpboost.online/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/about.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/about.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/contact.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/contact.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/FAQs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/FAQs.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/FAQs.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/FAQs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/FAQs.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/FAQs.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/all-niches-sites.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/all-niches-sites.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/all-niches-sites.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/all-niches-sites.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/all-niches-sites.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/all-niches-sites.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/portfolio.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/portfolio.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/blog-post-1.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-1.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-1.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/blog-post-1.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-1.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-1.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/blog-post-2.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-2.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/blog-post-2.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-2.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/blog-post-3.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-3.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/blog-post-3.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/blog-post-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/blog-post-3.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/privacy-policy.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/privacy-policy.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/terms-of-use.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/terms-of-use.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/terms-of-use.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/terms-of-use.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/terms-of-use.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/terms-of-use.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serpboost.online/refund-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/refund-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/refund-policy.html"/>
+    <lastmod>2026-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serpboost.online/ar/refund-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://serpboost.online/refund-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://serpboost.online/ar/refund-policy.html"/>
     <lastmod>2026-11-03</lastmod>
     <priority>0.7</priority>
   </url>
