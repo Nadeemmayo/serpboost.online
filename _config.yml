@@ -1,10 +1,6 @@
 title: SERPBoost
-url: "https://serpboost.online"
+url: https://serpboost.online
 baseurl: ""
-
 markdown: kramdown
-
-permalink: /blog/:title/
-
 exclude:
   - README.md
