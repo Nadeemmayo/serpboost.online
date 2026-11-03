@@ -390,10 +390,13 @@ h1,h2,h3,.legal p,.article p{overflow-wrap:break-word;hyphens:auto;-webkit-hyphe
 @media (min-width:961px){.duo3-m{position:relative;top:-96px}}
 .skip{left:8px!important;top:-80px}.skip:focus{top:8px}
 
-@font-face{font-family:"Display";src:url(/assets/fonts/display-ar-700.woff2) format("woff2");font-weight:600 700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Display";src:url(/assets/fonts/display-ar-700.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Display";src:url(/assets/fonts/display-ar-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
 @font-face{font-family:"Body";src:url(/assets/fonts/body-ar-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
 @font-face{font-family:"Body";src:url(/assets/fonts/body-ar-500.woff2) format("woff2");font-weight:500;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
-@font-face{font-family:"Body";src:url(/assets/fonts/body-ar-700.woff2) format("woff2");font-weight:600 700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Body";src:url(/assets/fonts/body-ar-700.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Body";src:url(/assets/fonts/body-ar-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Body";src:url(/assets/fonts/body-ar-700.woff2) format("woff2");font-weight:800;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}
 [dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] h4{letter-spacing:0;line-height:1.4}
 [dir=rtl] .eyebrow,[dir=rtl] .mega h4,[dir=rtl] .ftr h4,[dir=rtl] .inv th,[dir=rtl] .card-tag,[dir=rtl] .brand small,[dir=rtl] .logos a small{letter-spacing:0;text-transform:none}
 [dir=rtl] .fa-arrow-right,[dir=rtl] .fa-chevron-right,[dir=rtl] .fa-arrow-up{transform:scaleX(-1)}
